@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Address Book</title>
+	<link rel="shortcut icon" type="image/png" href="img/logo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<div id="main1">
+		<h1 id="heading">
+			My Address Book - Take-A-Climb-Challenge
+		</h1>
+		<div id="addContact">
+			<label for="name">Name*</label><br>
+			<input type="text" class="fg" id="name"><br>
+			<label for="email">E-mail*</label><br>
+			<input type="email" class="fg" id="email"><br>
+			<label for="phone">Phone*</label><br>
+			<input type="telephone" class="fg" id="tel"><br>
+			<label for="image">Upload Image</label>
+			<input type="file" accept="image" class="fg" onchange="previewFile()" id="image"><br>
+			<img src="" height="120" width="120" alt="Image preview..." id="imagePreview"><br>
+			<button class="btn" onclick="addNewContact()">Add &plus;</button>
+		</div>
+		<div id="main">
+
+
+		</div>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+</html>
